@@ -1,7 +1,20 @@
 ﻿@page "/learnBlazor/bindprop"
 
-<h3>BindProp</h3>
+
+
+<h3>Product-Data Binding</h3>
+Id: @product.Id
+<br />
+Name: @product.ProductName
+<br />
+Price: @product.ProductPrice
+
 
 @code {
-
+    Models.Product product = new Models.Product
+        {
+            Id = 1,
+            ProductName = "商品名稱",
+            ProductPrice = 100,
+        };
 }
